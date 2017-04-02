@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Be nerd, be fun.. be VVT!</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item text-wrap *ngFor="let item of newsData" (click)="itemTapped($event, item)" >
+      <p > {{item.title}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
